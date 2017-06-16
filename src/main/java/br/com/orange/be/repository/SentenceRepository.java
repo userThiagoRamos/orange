@@ -5,7 +5,7 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 import br.com.orange.be.model.Sentence;
 
-@RepositoryRestResource(collectionResourceRel = "sentence",path="sentence")
+@RepositoryRestResource(collectionResourceRel = "sentences",path="sentences")
 public interface SentenceRepository extends PagingAndSortingRepository<Sentence, Long> {
 
 }
