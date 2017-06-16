@@ -20,7 +20,7 @@ public class SentenceInitializer {
 	@EventListener
 	public void init(ApplicationReadyEvent event){
 		Sentence s = new Sentence();
-		s.setContent("This is the first sentece on the system.");
+		s.setContent("here is johnny");
 		sr.save(s);
 		log.info("======================== Initial database load done!!");
 		
