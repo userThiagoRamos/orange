@@ -13,15 +13,5 @@ public class OrangeBeApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(OrangeBeApplication.class, args);
 	}
-	
-	@Bean
-    public WebMvcConfigurer corsConfigurer() {
-        return new WebMvcConfigurerAdapter() {
-            @Override
-            public void addCorsMappings(CorsRegistry registry) {
-            	registry.addMapping("/sentence").allowedOrigins("http://localhost:8100");
-            
-            }
-        };
-    }
+
 }
