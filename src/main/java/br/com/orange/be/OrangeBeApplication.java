@@ -19,7 +19,7 @@ public class OrangeBeApplication {
         return new WebMvcConfigurerAdapter() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-            	registry.addMapping("/greeting-javaconfig").allowedOrigins("http://localhost:8100");
+            	registry.addMapping("/sentence").allowedOrigins("http://localhost:8100");
             
             }
         };
